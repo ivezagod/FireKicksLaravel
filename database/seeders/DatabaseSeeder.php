@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             NumberSeeder::class,
             BrandSeeder::class,
+            ProductSeeder::class,
             NumberProudctSeeder::class
 
         ]);
