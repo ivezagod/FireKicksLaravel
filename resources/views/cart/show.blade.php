@@ -21,7 +21,7 @@
                     @method('delete')
                     <input type="hidden" name="product_id" value="{{$cart->product_id}}">
                     <input type="hidden" name="order_id" value="{{$cart->order_id}}">
-                    <button type="submit" class="bg-gray-300 w-48 h-16 rounded-md">Remove Product</button>
+                    <button type="submit" class="bg-gray-300 md:w-48 h-16 rounded-md">Remove Product</button>
                 </form>
                 </div>
                 @endforeach

@@ -9,13 +9,13 @@
 
             <img class="w-156 " src="/{{$sneaker->image}}" alt="">
         </div>
-            <img class="w-16 h-16 lg:ml-10 ml-96 mb-5" src="{{$sneaker->brand->image}}">
+            <img class="w-16 h-16 lg:ml-10 ml-80 mb-5" src="{{$sneaker->brand->image}}">
 
             @can('update',$sneaker)
-                <a href="{{route('products.edit',$sneaker->id)}}" class="text-xl text-red-600 bg-black p-1  ml-56 ">Edit</a>
+                <a href="{{route('products.edit',$sneaker->id)}}" class="text-xl text-white bg-red-500 p-2 rounded-md ml-10 sm:ml-80  md:ml-96 lg:ml-56 ">Edit</a>
             @endcan
         </div>
-        <div class="flex flex-col items-center w-156 md:ml-24 ">
+        <div class="flex flex-col items-center w-156 sm:ml-16 md:ml-24 mt-5">
         <h3 class="text-5xl ">{{$sneaker->title}}</h3>
             <p>------------------------------</p>
             <div class="flex">
@@ -32,7 +32,7 @@
             <div>
                 <div class=" w-80   h-44 flex flex-wrap gap-10">
                     @foreach($sneaker->numbers as $number)
-                        <div class="bg-gray-500 w-10 h-10 text-center cursor-pointer clicked:bg-gray-900">
+                        <div class="bg-gray-300 w-10 h-10 text-center cursor-pointer  rounded-md">
                             <p class="mt-2">{{$number->number}}</p>
                         </div>
                     @endforeach
@@ -46,9 +46,9 @@
                 <div class="mt-36">
 
                 <label for="qty" class="">Quantity:</label>
-                <input type="text" name="qty" value="1" class="w-10 border-none bg-gray-500">
+                <input type="text" name="qty" value="1" class="w-10 border-none bg-gray-300 text-center">
                 </div>
-                <button type="submit" class="bg-red-500 ml-36  p-4 rounded-md md:mb-10">Dodaj u korpu</button>
+                <button type="submit" class="bg-red-500 ml-36  p-4 rounded-md md:mb-10 text-white">Dodaj u korpu</button>
             </form>
 
 
