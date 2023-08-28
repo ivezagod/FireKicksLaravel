@@ -11,12 +11,12 @@
                         <div class="mt-10">
                             <img src="{{$sneaker->image}}" alt="" class="w-80 h-64">
                             <img src="{{$sneaker->brand->image}}" alt="" class="ml-2 w-16 h-16 ">
-                            <p class="text-black">Dostupno boja: {{$sneaker->num_color}}</p>
+                            <p class="text-black p-1">Dostupno boja: {{$sneaker->num_color}}</p>
                             <hr class="border-black">
 
-                            <p class="text-black">{{$sneaker->title}}</p>
+                            <p class="text-black p-1">{{$sneaker->title}}</p>
                             <hr class="border-black w-44">
-                            <p class="text-black mb-5">{{$sneaker->price}}$</p>
+                            <p class="text-black mb-5 p-1">{{$sneaker->price}}$</p>
 
                         </div>
                     </a>
