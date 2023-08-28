@@ -9,6 +9,8 @@ U need to run a few commands in ur terminal.
 
 first u need to go to firekicks file and then run npm run dev and php artisan db:seed.
 
+In browers type FireKicks.test
+
 For admin panell u will already have a user created.
 
 Email: admin@admin.com
